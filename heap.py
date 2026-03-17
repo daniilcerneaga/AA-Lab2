@@ -17,4 +17,5 @@ largest = left
 if right < heap_size and a[right] > a[largest]:
 largest = right
 if largest != root_index:
-a[root_index], a[largest] = a[la
+a[root_index], a[largest] = a[largest], a[root_index]
+_heapify(a, heap_size, largest)
